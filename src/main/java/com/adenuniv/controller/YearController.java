@@ -14,35 +14,34 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.adenuniv.model.Student;
 import com.adenuniv.model.Year;
-import com.adenuniv.repo.StudentRepository;
+import com.adenuniv.repo.YearRepository;
 
 import io.swagger.annotations.Api;
 import lombok.RequiredArgsConstructor;
 
 @RestController
 @RequiredArgsConstructor(onConstructor = @__(@Autowired) )
-@Api("Operations about Student")
-public class StudentController {
+@Api("Operations about Year")
+public class YearController {
+	private final YearRepository repository;
 	
-	private final StudentRepository repository;
-	
-	@RequestMapping(value = "/student/{id}", method = RequestMethod.DELETE)
+	@RequestMapping(value = "/year/{id}", method = RequestMethod.DELETE)
 	@ResponseStatus(HttpStatus.NO_CONTENT)
 	public ResponseEntity<Void>  delete(@PathVariable("id") Long id) {
 		return new ResponseEntity<Void>(HttpStatus.OK);
 	}
 
-	@RequestMapping(value = "/student/", method = RequestMethod.POST)
-	public ResponseEntity<Void> addStudent(@RequestBody @Valid Student student) {
+	@RequestMapping(value = "/year/", method = RequestMethod.POST)
+	public ResponseEntity<Void> addStudent(@RequestBody @Valid Year student) {
 		repository.save(student);
 		return new ResponseEntity<Void>(HttpStatus.CREATED);
 	}
 	
-	@RequestMapping(value = "/sttudents/year/{yearId}", method = RequestMethod.GET)
-	public List<Student> listAllYears(@PathVariable("yearId") Long yearId){
+	@RequestMapping(value = "/years", method = RequestMethod.GET)
+	public List<Year> listAllYears(){
 		return repository.findAll();
 	}
+	
 
 }
