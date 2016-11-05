@@ -40,7 +40,7 @@ public class StudentController {
 		return new ResponseEntity<Void>(HttpStatus.CREATED);
 	}
 	
-	@RequestMapping(value = "/sttudents/year/{yearId}", method = RequestMethod.GET)
+	@RequestMapping(value = "/sttudent/year/{yearId}", method = RequestMethod.GET)
 	public List<Student> listAllYears(@PathVariable("yearId") Long yearId){
 		return repository.findAll();
 	}

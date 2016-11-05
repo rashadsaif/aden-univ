@@ -38,7 +38,7 @@ public class YearController {
 		return new ResponseEntity<Void>(HttpStatus.CREATED);
 	}
 	
-	@RequestMapping(value = "/years", method = RequestMethod.GET)
+	@RequestMapping(value = "/year", method = RequestMethod.GET)
 	public List<Year> listAllYears(){
 		return repository.findAll();
 	}
