@@ -1,0 +1,23 @@
+<ion-view title="Create Student" id="page15">
+  <ion-content padding="true" class="has-header">
+    <form id="createStudent-form5" class="list" ng-submit="createStudent(student)">
+      <label class="item item-input" id="createStudent-input6">
+        <span class="input-label">Name</span>
+        <input type="text" placeholder="" ng-model="student.name">
+      </label>
+      <label class="item item-input" id="createStudent-input7">
+        <span class="input-label">Address</span>
+        <input type="text" placeholder="" ng-model="student.address">
+      </label>
+    
+
+      <label class="item item-select" id="createStudent-select4">
+        <span class="input-label">Year</span>
+        <select ng-model="student.year">
+             <option ng-repeat="option in years" value="{{option.id}}">{{option.name}}</option>
+        </select>
+      </label>
+    <button type="submit" class="button button-block button-positive">Create </button>
+    </form>
+  </ion-content>
+</ion-view>

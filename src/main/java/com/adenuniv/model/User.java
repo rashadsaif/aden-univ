@@ -35,16 +35,18 @@ public class User  {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@JsonProperty(access = Access.READ_ONLY)
 	private Long id;
-	@NotBlank
+	//@NotBlank
 	
 	private String username;
 	@JsonProperty(access = Access.WRITE_ONLY)
 	private String password;
 	
 	private String name;
+	
+	private String address;
 
 
-	@NotBlank
+	//@NotBlank
 	private String mobileNumber;
 	@Email
 	private String email;

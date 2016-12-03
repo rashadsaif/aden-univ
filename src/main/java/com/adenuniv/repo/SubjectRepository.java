@@ -1,5 +1,7 @@
 package com.adenuniv.repo;
 
+import java.util.List;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.adenuniv.model.Subject;
@@ -12,5 +14,7 @@ public interface SubjectRepository
 //		bindings.bind(String.class).first((StringPath path, String value) -> path.containsIgnoreCase(value));
 //		//bindings.excluding(root.id);
 //	}
+	
+	List<Subject> findByYearId(Long id);
 
 }

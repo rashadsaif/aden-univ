@@ -1,0 +1,17 @@
+<ion-view title="Create Year" id="page5">
+  <ion-content padding="true" class="has-header">
+    <form id="createYear-form1" class="list" ng-submit="createYear(year)">
+      <ion-list id="createYear-list1">
+        <label class="item item-input" id="createYear-input1">
+          <span class="input-label">YearId</span>
+          <input type="text" placeholder=""  ng-model="year.id">
+        </label>
+        <label class="item item-input" id="createYear-input2">
+          <span class="input-label">Year Name</span>
+          <input type="text" placeholder="" ng-model="year.name">
+        </label>
+      </ion-list>
+       <button type="submit" class="button button-block button-positive">Create </button>
+    </form>
+  </ion-content>
+</ion-view>

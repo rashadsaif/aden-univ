@@ -1,0 +1,16 @@
+<ion-view title="Subjects" id="page13">
+  <ion-content padding="true" class="has-header">
+    <form id="listSubjects-form6" class="list">
+      <label class="item item-select" id="listSubjects-select3">
+        <span class="input-label">Year</span>
+        <select ng-model="year" ng-change="listSubjects(year)">
+             <option ng-repeat="option in years" value="{{option.id}}" >{{option.name}}</option>
+        </select>
+      </label>
+    </form>
+    <button id="listSubjects-button12" class="button button-positive  button-block">List</button>
+    <ion-list id="listSubjects-list6">
+      <ion-item ng-repeat="subject in subjects" >{{subject.name}}</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

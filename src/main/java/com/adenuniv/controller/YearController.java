@@ -24,8 +24,6 @@ import lombok.RequiredArgsConstructor;
 @RestController
 @RequiredArgsConstructor(onConstructor = @__(@Autowired) )
 @Api("Operations about Year")
-@CrossOrigin(origins = "*")
-
 public class YearController {
 	private final YearRepository repository;
 	
@@ -36,7 +34,7 @@ public class YearController {
 	}
 
 	@RequestMapping(value = "/year/", method = RequestMethod.POST)
-	public ResponseEntity<Void> addStudent(@RequestBody @Valid Year student) {
+	public ResponseEntity<Void> addYear(@RequestBody @Valid Year student) {
 		repository.save(student);
 		return new ResponseEntity<Void>(HttpStatus.CREATED);
 	}

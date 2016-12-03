@@ -1,0 +1,19 @@
+<ion-view title="Create Subject" id="page6">
+  <ion-content padding="true" class="has-header">
+    <form id="createSubject-form5" class="list" ng-submit="createSubject(subject)">
+      <label class="item item-input" id="createSubject-input6">
+        <span class="input-label">Name</span>
+        <input type="text" placeholder="" ng-model="subject.name">
+      </label>
+  
+
+      <label class="item item-select" id="createSubject-select4">
+        <span class="input-label">Year</span>
+        <select ng-model="subject.year">
+             <option ng-repeat="option in years" value="{{option.id}}">{{option.name}}</option>
+        </select>
+      </label>
+    <button type="submit" class="button button-block button-positive">Create </button>
+    </form>
+  </ion-content>
+</ion-view>

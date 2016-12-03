@@ -1,0 +1,16 @@
+m<ion-view title="List Students" id="page16">
+  <ion-content padding="true" class="has-header">
+    <form id="listStudents-form6" class="list">
+      <label class="item item-select" id="listStudents-select3">
+        <span class="input-label">Year</span>
+        <select ng-model="year" ng-change="listStudents(year)">
+             <option ng-repeat="option in years" value="{{option.id}}" >{{option.name}}</option>
+        </select>
+      </label>
+    </form>
+    <button id="listStudents-button12" class="button button-positive  button-block">List</button>
+    <ion-list id="listStudents-list6">
+      <ion-item ng-repeat="student in students" > {{student.id}}-{{student.name}}</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

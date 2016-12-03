@@ -1,0 +1,16 @@
+s<ion-view title="Marks" id="page11">
+  <ion-content padding="true" class="has-header">
+    <form id="marks-form3" class="list" ng-submit="showMarks(studentId)">
+      <label class="item item-input" id="marks-textarea1">
+        <span class="input-label">Student Id</span> <input type="text" placeholder="" ng-model="studentId"></label>
+        <button type="submit" class="button button-block button-positive">Show Marks </button>
+    </form>
+
+    <ion-list id="studentMarks-list5">
+      <ion-item class="positive" id="studentMarks-list-item11" ng-repeat="mark in marks" >{{mark.subject}}
+        <span class="item-note">{{mark.mark}}</span>
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+</ion-view>
