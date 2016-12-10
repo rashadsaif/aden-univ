@@ -9,7 +9,7 @@ import com.adenuniv.model.Notification;
 
 public interface NotificationRepository
 		extends JpaRepository<Notification, Long>{
-	List<Notification> findByTypeOrderByIdDesc(String type);
+	List<Notification> findByToOrderByIdDesc(String to);
 
 
 }

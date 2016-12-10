@@ -49,7 +49,7 @@ public class NotificationController {
 	public ResponseEntity<List<Notification>> listAllNotifications(@RequestParam("to") String to,
 			@RequestParam("password") String password) {
 		if (isCorrectPasswordForList(to, password) && to!=null) {
-			return new ResponseEntity<List<Notification>>(repository.findByTypeOrderByIdDesc(to), HttpStatus.OK);
+			return new ResponseEntity<List<Notification>>(repository.findByToOrderByIdDesc(to), HttpStatus.OK);
 		} else {
 			return new ResponseEntity(null, HttpStatus.UNAUTHORIZED);
 		}
