@@ -48,8 +48,8 @@ public class NotificationController {
 	@RequestMapping(value = "/notification", method = RequestMethod.GET)
 	public ResponseEntity<List<Notification>> listAllNotifications(@RequestParam("type") String type,
 			@RequestParam("password") String password) {
-		if (isCorrectPasswordForList(type, password)) {
-			return new ResponseEntity<List<Notification>>(repository.findAll(), HttpStatus.CREATED);
+		if (isCorrectPasswordForList(type, password) && type!=null) {
+			return new ResponseEntity<List<Notification>>(repository.findByTypeOrderByIdDesc(type), HttpStatus.CREATED);
 		} else {
 			return new ResponseEntity(null, HttpStatus.UNAUTHORIZED);
 		}
