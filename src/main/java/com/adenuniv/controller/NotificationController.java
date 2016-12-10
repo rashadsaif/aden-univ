@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -21,27 +22,81 @@ import io.swagger.annotations.Api;
 import lombok.RequiredArgsConstructor;
 
 @RestController
-@RequiredArgsConstructor(onConstructor = @__(@Autowired) )
+@RequiredArgsConstructor(onConstructor = @__(@Autowired))
 @Api("Operations about Notification")
 public class NotificationController {
 	private final NotificationRepository repository;
-	
+
 	@RequestMapping(value = "/notification/{id}", method = RequestMethod.DELETE)
 	@ResponseStatus(HttpStatus.NO_CONTENT)
-	public ResponseEntity<Void>  delete(@PathVariable("id") Long id) {
+	public ResponseEntity<Void> delete(@PathVariable("id") Long id) {
 		return new ResponseEntity<Void>(HttpStatus.OK);
 	}
 
 	@RequestMapping(value = "/notification/", method = RequestMethod.POST)
 	public ResponseEntity<Void> addNotification(@RequestBody @Valid Notification notification) {
-		repository.save(notification);
-		return new ResponseEntity<Void>(HttpStatus.CREATED);
+		if (isCorrectPasswordForList(notification.getTo(), notification.getPassword())) {
+			repository.save(notification);
+			return new ResponseEntity<Void>(HttpStatus.CREATED);
+		} else {
+			return new ResponseEntity<Void>(HttpStatus.UNAUTHORIZED);
+
+		}
+
 	}
-	
+
 	@RequestMapping(value = "/notification", method = RequestMethod.GET)
-	public List<Notification> listAllNotifications(){
-		return repository.findAll();
+	public ResponseEntity<List<Notification>> listAllNotifications(@RequestParam("type") String type,
+			@RequestParam("password") String password) {
+		if (isCorrectPasswordForList(type, password)) {
+			return new ResponseEntity<List<Notification>>(repository.findAll(), HttpStatus.CREATED);
+		} else {
+			return new ResponseEntity(null, HttpStatus.UNAUTHORIZED);
+		}
 	}
-	
+
+	private boolean isCorrectPasswordForList(String type, String password) {
+		boolean isCorrect = false;
+		switch (type) {
+		case "stdAffairs":
+			isCorrect = "aff".equals(password);
+			break;
+		case "deanship":
+			isCorrect = "den".equals(password);
+			break;
+		case "allstd":
+			isCorrect = "std".equals(password);
+			break;
+		case "delegate":
+			isCorrect = "del".equals(password);
+			break;
+		case "deptHead":
+			isCorrect = "dpt".equals(password);
+			break;
+		}
+		return isCorrect;
+	}
+
+	private boolean isCorrectPasswordForAdd(String type, String password) {
+		boolean isCorrect = false;
+		switch (type) {
+		case "stdAffairs":
+			isCorrect = "aff@aden".equals(password);
+			break;
+		case "deanship":
+			isCorrect = "den@aden".equals(password);
+			break;
+		case "allstd":
+			isCorrect = "std@aden".equals(password);
+			break;
+		case "delegate":
+			isCorrect = "del@aden".equals(password);
+			break;
+		case "deptHead":
+			isCorrect = "dpt@aden".equals(password);
+			break;
+		}
+		return isCorrect;
+	}
 
 }
