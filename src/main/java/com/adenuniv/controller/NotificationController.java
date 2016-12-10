@@ -35,7 +35,7 @@ public class NotificationController {
 
 	@RequestMapping(value = "/notification/", method = RequestMethod.POST)
 	public ResponseEntity<Void> addNotification(@RequestBody @Valid Notification notification) {
-		if (isCorrectPasswordForList(notification.getTo(), notification.getPassword())) {
+		if (isCorrectPasswordForAdd(notification.getTo(), notification.getPassword())) {
 			repository.save(notification);
 			return new ResponseEntity<Void>(HttpStatus.CREATED);
 		} else {
@@ -46,10 +46,10 @@ public class NotificationController {
 	}
 
 	@RequestMapping(value = "/notification", method = RequestMethod.GET)
-	public ResponseEntity<List<Notification>> listAllNotifications(@RequestParam("type") String type,
+	public ResponseEntity<List<Notification>> listAllNotifications(@RequestParam("to") String to,
 			@RequestParam("password") String password) {
-		if (isCorrectPasswordForList(type, password) && type!=null) {
-			return new ResponseEntity<List<Notification>>(repository.findByTypeOrderByIdDesc(type), HttpStatus.CREATED);
+		if (isCorrectPasswordForList(to, password) && to!=null) {
+			return new ResponseEntity<List<Notification>>(repository.findByTypeOrderByIdDesc(to), HttpStatus.OK);
 		} else {
 			return new ResponseEntity(null, HttpStatus.UNAUTHORIZED);
 		}
