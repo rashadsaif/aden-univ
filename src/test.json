@@ -1,0 +1,2276 @@
+// 20200402020729
+// https://gitlab.com/rashadsaif/testapps/-/raw/master/middleware
+
+{
+  "id": "d78e829d-b919-443f-956b-b635a7c73612",
+  "name": "Middleware Swagger APIs",
+  "allTests": [
+    
+  ],
+  "timestamp": "2020-04-01T20:10:29.183Z",
+  "collection_id": "f4babd8d-d322-4348-b957-7ec6f66ddaec",
+  "folder_id": 0,
+  "target_type": "collection",
+  "environment_id": "0",
+  "data": [
+    
+  ],
+  "delay": 0,
+  "count": 1,
+  "collection": {
+    "id": "f4babd8d-d322-4348-b957-7ec6f66ddaec",
+    "name": "Middleware Swagger APIs",
+    "description": "All the Midleware APIs requires IP address, operator id and langauge. The error codes can be found https://wiki.elm.sa/x/cWA-B",
+    "auth": null,
+    "events": [
+      {
+        "listen": "prerequest",
+        "script": {
+          "id": "ac1350a1-3623-43cb-977b-cd61f92c754b",
+          "type": "text/javascript",
+          "exec": [
+            ""
+          ]
+        }
+      },
+      {
+        "listen": "test",
+        "script": {
+          "id": "b07909a9-22be-4f2a-bbf4-44202ed2e412",
+          "type": "text/javascript",
+          "exec": [
+            "pm.test(\"Status test\", function () {",
+            "    pm.response.to.have.status(200);",
+            "});"
+          ]
+        }
+      }
+    ],
+    "variables": [
+      {
+        "key": "getPersonAdressId",
+        "value": "2009677747",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "getAlienSponsorInfoPersonId",
+        "value": "2140580008",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "getAlienVisaInfoPersonId",
+        "value": "2141028569",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "getCustomCardInfoCustomCardInfo",
+        "value": "110018591",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "converDateDate",
+        "value": "20150202",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "getFirmInfo",
+        "value": "7001398960",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "listBusinessLaborsid",
+        "value": "7000000062",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "getMoneyBalanceid",
+        "value": "2141028569",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "getPersonBasicInfoPersonId",
+        "value": "2139110924",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "getPersonDeathCertificatePersonId",
+        "value": "1002730826",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "getPersonFamilyTreePersonId",
+        "value": "1002730826",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "getPersonIdInfoPersonId",
+        "value": "2139276576",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "listSponsorVisitorsId",
+        "value": "7001398960",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "listPersonDependentsPersonId",
+        "value": "2139110924",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "listDomesticLaborsPersonId",
+        "value": "2141021556",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "listPersonDrivingLicensesPersonId",
+        "value": "2009667516",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "listPersonHealthInsurancePersonId",
+        "value": "2000002168",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "listPersonSocialEventsPersonId",
+        "value": "1002730826",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "listPersonTravelRecordsPersonId",
+        "value": "1000011021",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "listPersonWantedRecordsPersonId",
+        "value": "1002730826",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "listPersonPassportsNationality",
+        "value": "",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "listPersonPassportsPassportNumber",
+        "value": "",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "listPersonPassportsPersonId",
+        "value": "1000011021",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "listPersonPassportsPersonType",
+        "value": "",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "listTrafficViolationsPersonId",
+        "value": "1000011021",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "listTrafficViolationsPageNumber",
+        "value": "1",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "listTrafficViolationsPageSize",
+        "value": "50",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "listTrafficViolationsVehicleSerialNumber",
+        "value": "1",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "listTrafficViolationsViolationStatus",
+        "value": "2",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "listTrafficViolationsForeignVehicleCrossingSeq",
+        "value": "1",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "listTrafficViolationsForeignVehicleNumber",
+        "value": "50",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "getTravelStatusPersonId",
+        "value": "2140580008",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "getVisitorVisaInfoBorderId",
+        "value": "3222336574",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "app-id",
+        "value": "yui",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "app-key",
+        "value": "dee",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "getAccidentInfoAccidentNumber ",
+        "value": "100014307",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "listVehiclesPersonId",
+        "value": "3223384375",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "listVehiclesVehicleSerialNumber",
+        "value": "111000000",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "listVehiclesIncludePreviouslyOwned",
+        "value": "1",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "listVehiclesPageNumber",
+        "value": "1",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "listVehiclesPageSize",
+        "value": "50",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "getVehicleInfoVehicleSequenceNumber",
+        "value": "10400",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "getVehicleInfoPlate",
+        "value": "ببب-2222-1",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "getVehicleInfoOldPlateNumber",
+        "value": "1010002",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "getVehicleInfoVin",
+        "value": "VD9909",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "listAccidentsVehSequenceNumber",
+        "value": "10400",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "listAccidentsPageNumber",
+        "value": "1",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "listVehicleCoownersAndDelegatesVehSequenceNumber",
+        "value": "80400",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "listVehiclePolicyInfoVehSequenceNumber",
+        "value": "604034644",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "listVehicleWantedRecordsVehicleSequenceNumber",
+        "value": "10400",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "listVehicleWantedRecordsPlate",
+        "value": "ببب-2222-1",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "getTrafficViolationInfoViolationNumber ",
+        "value": "6999976950",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "key": "uuid",
+        "value": "d6eb4257-85b5-44e3-870e-d0b5330bbc38",
+        "description": "",
+        "type": "text",
+        "disabled": false
+      }
+    ],
+    "order": [
+      
+    ],
+    "folders_order": [
+      "973e30a3-e25b-4a00-8485-0ec5b71578cc"
+    ],
+    "owner": "5663168",
+    "permissions": {
+      
+    },
+    "favorite": false,
+    "shared": false,
+    "type": "collection",
+    "depth": 0
+  },
+  "folder": null,
+  "environment": null,
+  "globals": [
+    
+  ],
+  "results": [
+    {
+      "name": "getAccidentInfo",
+      "id": "15561eff-019c-4e33-8bea-c06604e4f543",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/accident-info/",
+      "totalTime": 0,
+      "responseCode": {
+        "code": 404,
+        "name": "Not Found",
+        "detail": {
+          "name": "Not Found",
+          "detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+        }
+      },
+      "tests": {
+        "name": "Status test",
+        "status": "fail",
+        "Status test": false
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "times": [
+        "49"
+      ],
+      "allTests": [
+        {
+          "Status test": false
+        }
+      ],
+      "time": "49",
+      "totalRequestTime": "49",
+      "iterationResults": {
+        
+      }
+    },
+    {
+      "name": "getPersonAddress",
+      "id": "28c10d3f-f8a1-4246-8f8c-5b158a8b0f11",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/address/2009677747",
+      "totalTime": 0,
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "tests": {
+        "name": "Status test",
+        "status": "pass"
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "times": [
+        "879"
+      ],
+      "allTests": [
+        {
+          "Status test": true
+        }
+      ],
+      "time": "879",
+      "totalRequestTime": "879",
+      "iterationResults": {
+        
+      }
+    },
+    {
+      "name": "getAlienSponsorInfo",
+      "id": "453543e6-6bc9-42a6-9c67-306b96330469",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/alien-sponsor-info/{{personId}}",
+      "totalTime": 0,
+      "responseCode": {
+        "code": 401,
+        "name": "Unauthorized",
+        "detail": {
+          "name": "Unauthorized",
+          "detail": "Similar to 403 Forbidden, but specifically for use when authentication is possible but has failed or not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource."
+        }
+      },
+      "tests": {
+        "name": "Status test",
+        "status": "fail"
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "times": [
+        "28"
+      ],
+      "allTests": [
+        {
+          "Status test": false
+        }
+      ],
+      "time": "28",
+      "totalRequestTime": "28",
+      "iterationResults": {
+        
+      }
+    },
+    {
+      "name": "getAlienVisaInfo",
+      "id": "d51d919c-5f53-4172-9a3c-d2335f6cadf2",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/alien-visa-info?listAll=1&personId=2141028569",
+      "totalTime": 0,
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "tests": {
+        "name": "Status test",
+        "status": "pass"
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "times": [
+        "857"
+      ],
+      "allTests": [
+        {
+          "Status test": true
+        }
+      ],
+      "time": "857",
+      "totalRequestTime": "857",
+      "iterationResults": {
+        
+      }
+    },
+    {
+      "name": "getCustomCardInfo",
+      "id": "f853232f-ae5e-44a6-98b8-cb0988b34fbe",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/custom-card-info/110018591",
+      "totalTime": 0,
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "tests": {
+        "name": "Status test",
+        "status": "pass"
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "times": [
+        "945"
+      ],
+      "allTests": [
+        {
+          "Status test": true
+        }
+      ],
+      "time": "945",
+      "totalRequestTime": "945",
+      "iterationResults": {
+        
+      }
+    },
+    {
+      "name": "convertDate",
+      "id": "d8c87dfb-df53-4ee2-8a3d-dc763344962f",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/date-converter/20150202",
+      "totalTime": 0,
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "tests": {
+        "name": "Status test",
+        "status": "pass"
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "times": [
+        "951"
+      ],
+      "allTests": [
+        {
+          "Status test": true
+        }
+      ],
+      "time": "951",
+      "totalRequestTime": "951",
+      "iterationResults": {
+        
+      }
+    },
+    {
+      "name": "getFirmInfo",
+      "id": "6f9cda4d-c8e5-4eee-b363-05e0c6af3751",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/firm-info/7001398960?businessSeqNumber=1",
+      "totalTime": 0,
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "tests": {
+        "name": "Status test",
+        "status": "pass"
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "times": [
+        "945"
+      ],
+      "allTests": [
+        {
+          "Status test": true
+        }
+      ],
+      "time": "945",
+      "totalRequestTime": "945",
+      "iterationResults": {
+        
+      }
+    },
+    {
+      "name": "listBusinessLabors",
+      "id": "4dcbe98e-f746-4cf7-bac7-f8ee1a8c1eaf",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/firm/7000000062/business-labor?businessSequenceNumber=0&listAll=1&pageNumber=1&pageSize=50",
+      "totalTime": 0,
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "tests": {
+        "name": "Status test",
+        "status": "pass"
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "times": [
+        "969"
+      ],
+      "allTests": [
+        {
+          "Status test": true
+        }
+      ],
+      "time": "969",
+      "totalRequestTime": "969",
+      "iterationResults": {
+        
+      }
+    },
+    {
+      "name": "getMoneyBalance",
+      "id": "605cab14-1355-4292-be5f-cf39c1599c8f",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/money-balance/2141028569",
+      "totalTime": 0,
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "tests": {
+        "name": "Status test",
+        "status": "pass"
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "times": [
+        "941"
+      ],
+      "allTests": [
+        {
+          "Status test": true
+        }
+      ],
+      "time": "941",
+      "totalRequestTime": "941",
+      "iterationResults": {
+        
+      }
+    },
+    {
+      "name": "getPersonBasicInfo",
+      "id": "c396d534-5099-4512-b660-c59f45f2a832",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/person-basic-info/2139110924",
+      "totalTime": 0,
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "tests": {
+        "name": "Status test",
+        "status": "pass"
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "times": [
+        "972"
+      ],
+      "allTests": [
+        {
+          "Status test": true
+        }
+      ],
+      "time": "972",
+      "totalRequestTime": "972",
+      "iterationResults": {
+        
+      }
+    },
+    {
+      "name": "getPersonDeathCertificate",
+      "id": "e61ca51c-bc6d-4bac-9825-08b3f5e8427d",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/person-death-certificate/1002730826",
+      "totalTime": 0,
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "tests": {
+        "name": "Status test",
+        "status": "pass"
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "times": [
+        "953"
+      ],
+      "allTests": [
+        {
+          "Status test": true
+        }
+      ],
+      "time": "953",
+      "totalRequestTime": "953",
+      "iterationResults": {
+        
+      }
+    },
+    {
+      "name": "getPersonFamilyTree",
+      "id": "ab540349-2fe0-4ce5-ada8-e578f581ac47",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/person-family-tree/1002730826",
+      "totalTime": 0,
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "tests": {
+        "name": "Status test",
+        "status": "pass"
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "times": [
+        "962"
+      ],
+      "allTests": [
+        {
+          "Status test": true
+        }
+      ],
+      "time": "962",
+      "totalRequestTime": "962",
+      "iterationResults": {
+        
+      }
+    },
+    {
+      "name": "getPersonIdInfo",
+      "id": "00e61591-a08c-43d5-a3bd-bfc4fec02a96",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/person-id-info/2139276576",
+      "totalTime": 0,
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "tests": {
+        "name": "Status test",
+        "status": "pass"
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "times": [
+        "952"
+      ],
+      "allTests": [
+        {
+          "Status test": true
+        }
+      ],
+      "time": "952",
+      "totalRequestTime": "952",
+      "iterationResults": {
+        
+      }
+    },
+    {
+      "name": "listPersonPassports",
+      "id": "b5a94296-2aa7-46c3-8d1c-e377effb769d",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/person/passport?nationality=&passportNumber=&personId=1000011021&personType=",
+      "totalTime": 0,
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "tests": {
+        "name": "Status test",
+        "status": "pass"
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "times": [
+        "965"
+      ],
+      "allTests": [
+        {
+          "Status test": true
+        }
+      ],
+      "time": "965",
+      "totalRequestTime": "965",
+      "iterationResults": {
+        
+      }
+    },
+    {
+      "name": "listTrafficViolations",
+      "id": "6696fbc2-5bc2-4654-912f-512049d1da68",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/person/traffic-violation?foreignVehicleCrossingSeq=&foreignVehicleNumber=&pageNumber=1&pageSize=50&personId=1000011021&vehicleSerialNumber=&violationStatus=1",
+      "totalTime": 0,
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "tests": {
+        "name": "Status test",
+        "status": "pass"
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "times": [
+        "1470"
+      ],
+      "allTests": [
+        {
+          "Status test": true
+        }
+      ],
+      "time": "1470",
+      "totalRequestTime": "1470",
+      "iterationResults": {
+        
+      }
+    },
+    {
+      "name": "listSponsorVisitors",
+      "id": "1dc872e8-0b04-49fd-8b8f-2b6b9aa3a336",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/person/7001398960/visitor?pageNumber=1&pageSize=50&visaType=6",
+      "totalTime": 0,
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "tests": {
+        "name": "Status test",
+        "status": "pass"
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "times": [
+        "949"
+      ],
+      "allTests": [
+        {
+          "Status test": true
+        }
+      ],
+      "time": "949",
+      "totalRequestTime": "949",
+      "iterationResults": {
+        
+      }
+    },
+    {
+      "name": "listPersonDependents",
+      "id": "0cfcc59f-bed4-43f5-911f-4136a0bb43c7",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/person/2139110924/dependent",
+      "totalTime": 0,
+      "responseCode": {
+        "code": 400,
+        "name": "Bad Request",
+        "detail": {
+          "name": "Bad Request",
+          "detail": "The request cannot be fulfilled due to bad syntax."
+        }
+      },
+      "tests": {
+        "name": "Status test",
+        "status": "fail"
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "times": [
+        "29"
+      ],
+      "allTests": [
+        {
+          "Status test": false
+        }
+      ],
+      "time": "29",
+      "totalRequestTime": "29",
+      "iterationResults": {
+        
+      }
+    },
+    {
+      "name": "listDomesticLabors",
+      "id": "22b1bc42-f88b-4f48-a63c-fd9f37ba5d10",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/person/2141021556/domestic-labor?listAll=1&pageNumber=50&pageSize=1",
+      "totalTime": 0,
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "tests": {
+        "name": "Status test",
+        "status": "pass"
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "times": [
+        "870"
+      ],
+      "allTests": [
+        {
+          "Status test": true
+        }
+      ],
+      "time": "870",
+      "totalRequestTime": "870",
+      "iterationResults": {
+        
+      }
+    },
+    {
+      "name": "listPersonDrivingLicenses",
+      "id": "6e02bc52-69b1-44d2-b4af-d316a967b1c2",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/person/2009667516/driving-license",
+      "totalTime": 0,
+      "responseCode": {
+        "code": 500,
+        "name": "Internal Server Error",
+        "detail": {
+          "name": "Internal Server Error",
+          "detail": "A generic error message, given when no more specific message is suitable."
+        }
+      },
+      "tests": {
+        "name": "Status test",
+        "status": "fail"
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "times": [
+        "1047"
+      ],
+      "allTests": [
+        {
+          "Status test": false
+        }
+      ],
+      "time": "1047",
+      "totalRequestTime": "1047",
+      "iterationResults": {
+        
+      }
+    },
+    {
+      "name": "listPersonHealthInsurance",
+      "id": "1cbe28ba-f272-4477-b50e-1df970878db8",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/person/2000002168/health-insurance",
+      "totalTime": 0,
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "tests": {
+        "name": "Status test",
+        "status": "pass"
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "times": [
+        "865"
+      ],
+      "allTests": [
+        {
+          "Status test": true
+        }
+      ],
+      "time": "865",
+      "totalRequestTime": "865",
+      "iterationResults": {
+        
+      }
+    },
+    {
+      "name": "listPersonSocialEvents",
+      "id": "56dd6e99-5c89-4166-9e7f-8698e96da493",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/person/1002730826/social-event",
+      "totalTime": 0,
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "tests": {
+        "name": "Status test",
+        "status": "pass"
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "times": [
+        "968"
+      ],
+      "allTests": [
+        {
+          "Status test": true
+        }
+      ],
+      "time": "968",
+      "totalRequestTime": "968",
+      "iterationResults": {
+        
+      }
+    },
+    {
+      "name": "listPersonTravelRecords",
+      "id": "402437bf-f4aa-4101-8d93-02264ecc2cfe",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/person/1000011021/travel-record",
+      "totalTime": 0,
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "tests": {
+        "name": "Status test",
+        "status": "pass"
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "times": [
+        "958"
+      ],
+      "allTests": [
+        {
+          "Status test": true
+        }
+      ],
+      "time": "958",
+      "totalRequestTime": "958",
+      "iterationResults": {
+        
+      }
+    },
+    {
+      "name": "listPersonWantedRecords",
+      "id": "b6ac4288-037d-4cdb-989e-22239a6754ba",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/person/1002730826/wanted-record",
+      "totalTime": 0,
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "tests": {
+        "name": "Status test",
+        "status": "pass"
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "times": [
+        "950"
+      ],
+      "allTests": [
+        {
+          "Status test": true
+        }
+      ],
+      "time": "950",
+      "totalRequestTime": "950",
+      "iterationResults": {
+        
+      }
+    },
+    {
+      "name": "getTravelStatus",
+      "id": "7123a454-2146-4069-bec7-5fb50d11b6c4",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/travel-status/2140580008",
+      "totalTime": 0,
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "tests": {
+        "name": "Status test",
+        "status": "pass"
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "times": [
+        "962"
+      ],
+      "allTests": [
+        {
+          "Status test": true
+        }
+      ],
+      "time": "962",
+      "totalRequestTime": "962",
+      "iterationResults": {
+        
+      }
+    },
+    {
+      "name": "listVehicles",
+      "id": "b08755e9-1546-4708-89a0-91e42fac05a1",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/vehicle?includePreviouslyOwned=1&pageNumber=1&pageSize=50&personId=3223384375&vehicleSerialNumber=",
+      "totalTime": 0,
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "tests": {
+        "name": "Status test",
+        "status": "pass"
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "times": [
+        "971"
+      ],
+      "allTests": [
+        {
+          "Status test": true
+        }
+      ],
+      "time": "971",
+      "totalRequestTime": "971",
+      "iterationResults": {
+        
+      }
+    },
+    {
+      "name": "getVehicleInfo",
+      "id": "44adb639-90ae-47de-ad2d-875bbb223cd1",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/vehicle-info?oldPlateNumber=1010002&plate=ببب-2222-1&vehicleSequenceNumber=10400&vin=VD9909",
+      "totalTime": 0,
+      "responseCode": {
+        "code": 400,
+        "name": "Bad Request",
+        "detail": {
+          "name": "Bad Request",
+          "detail": "The request cannot be fulfilled due to bad syntax."
+        }
+      },
+      "tests": {
+        "name": "Status test",
+        "status": "fail"
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "times": [
+        "34"
+      ],
+      "allTests": [
+        {
+          "Status test": false
+        }
+      ],
+      "time": "34",
+      "totalRequestTime": "34",
+      "iterationResults": {
+        
+      }
+    },
+    {
+      "name": "listVehicleWantedRecords",
+      "id": "65dbcf36-def7-41e3-b05a-3df86a8ef514",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/vehicle/wanted-record?plate=ببب-2222-1&vehicleSequenceNumber=10400",
+      "totalTime": 0,
+      "responseCode": {
+        "code": 400,
+        "name": "Bad Request",
+        "detail": {
+          "name": "Bad Request",
+          "detail": "The request cannot be fulfilled due to bad syntax."
+        }
+      },
+      "tests": {
+        "name": "Status test",
+        "status": "fail"
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "times": [
+        "25"
+      ],
+      "allTests": [
+        {
+          "Status test": false
+        }
+      ],
+      "time": "25",
+      "totalRequestTime": "25",
+      "iterationResults": {
+        
+      }
+    },
+    {
+      "name": "listAccidents",
+      "id": "1ace16f2-2685-4787-b42d-8da241ec0316",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/vehicle/10400/accident?pageNumber=1&pageSize=50",
+      "totalTime": 0,
+      "responseCode": {
+        "code": 404,
+        "name": "Not Found",
+        "detail": {
+          "name": "Not Found",
+          "detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+        }
+      },
+      "tests": {
+        "name": "Status test",
+        "status": "fail"
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "times": [
+        "18"
+      ],
+      "allTests": [
+        {
+          "Status test": false
+        }
+      ],
+      "time": "18",
+      "totalRequestTime": "18",
+      "iterationResults": {
+        
+      }
+    },
+    {
+      "name": "listVehicleCoownersAndDelegates",
+      "id": "65eb7848-636c-4490-a01a-2c3f8ff7dcb8",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/vehicle/80400/co-owners-delegates?coOwningType=1&listAll=1",
+      "totalTime": 0,
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "tests": {
+        "name": "Status test",
+        "status": "pass"
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "times": [
+        "796"
+      ],
+      "allTests": [
+        {
+          "Status test": true
+        }
+      ],
+      "time": "796",
+      "totalRequestTime": "796",
+      "iterationResults": {
+        
+      }
+    },
+    {
+      "name": "listVehiclePolicyInfo",
+      "id": "814034c0-5432-425f-b8f3-01691ddecc86",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/vehicle/604034644/policy-info",
+      "totalTime": 0,
+      "responseCode": {
+        "code": 404,
+        "name": "Not Found",
+        "detail": {
+          "name": "Not Found",
+          "detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+        }
+      },
+      "tests": {
+        "name": "Status test",
+        "status": "fail"
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "times": [
+        "14"
+      ],
+      "allTests": [
+        {
+          "Status test": false
+        }
+      ],
+      "time": "14",
+      "totalRequestTime": "14",
+      "iterationResults": {
+        
+      }
+    },
+    {
+      "name": "getTrafficViolationInfo",
+      "id": "1e0fdcbe-e0aa-41d3-9100-532df33b6651",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/violation-info/6999976950",
+      "totalTime": 0,
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "tests": {
+        "name": "Status test",
+        "status": "pass"
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "times": [
+        "878"
+      ],
+      "allTests": [
+        {
+          "Status test": true
+        }
+      ],
+      "time": "878",
+      "totalRequestTime": "878",
+      "iterationResults": {
+        
+      }
+    },
+    {
+      "name": "getVisitorVisaInfo",
+      "id": "a8a5a6b6-001e-44d3-943d-0d5cf4b84b6b",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/visitor-visa-info/3222336574",
+      "totalTime": 0,
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "tests": {
+        "name": "Status test",
+        "status": "pass"
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "times": [
+        "950"
+      ],
+      "allTests": [
+        {
+          "Status test": true
+        }
+      ],
+      "time": "950",
+      "totalRequestTime": "950",
+      "iterationResults": {
+        
+      }
+    }
+  ],
+  "totalPass": 24,
+  "totalFail": 9,
+  "totalTime": 24122,
+  "lifecycle": "done",
+  "requests": [
+    {
+      "name": "getAccidentInfo",
+      "id": "15561eff-019c-4e33-8bea-c06604e4f543",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/accident-info/",
+      "time": "2020-04-01T20:10:29.183Z",
+      "responseCode": {
+        "code": 404,
+        "name": "Not Found",
+        "detail": {
+          "name": "Not Found",
+          "detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+        }
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "name": "getPersonAddress",
+      "id": "28c10d3f-f8a1-4246-8f8c-5b158a8b0f11",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/address/2009677747",
+      "time": "2020-04-01T20:10:29.183Z",
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    },
+    {
+      "name": "getAlienSponsorInfo",
+      "id": "453543e6-6bc9-42a6-9c67-306b96330469",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/alien-sponsor-info/{{personId}}",
+      "time": "2020-04-01T20:10:29.183Z",
+      "responseCode": {
+        "code": 401,
+        "name": "Unauthorized",
+        "detail": {
+          "name": "Unauthorized",
+          "detail": "Similar to 403 Forbidden, but specifically for use when authentication is possible but has failed or not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource."
+        }
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "name": "getAlienVisaInfo",
+      "id": "d51d919c-5f53-4172-9a3c-d2335f6cadf2",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/alien-visa-info?listAll=1&personId=2141028569",
+      "time": "2020-04-01T20:10:29.183Z",
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    },
+    {
+      "name": "getCustomCardInfo",
+      "id": "f853232f-ae5e-44a6-98b8-cb0988b34fbe",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/custom-card-info/110018591",
+      "time": "2020-04-01T20:10:29.183Z",
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    },
+    {
+      "name": "convertDate",
+      "id": "d8c87dfb-df53-4ee2-8a3d-dc763344962f",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/date-converter/20150202",
+      "time": "2020-04-01T20:10:29.183Z",
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    },
+    {
+      "name": "getFirmInfo",
+      "id": "6f9cda4d-c8e5-4eee-b363-05e0c6af3751",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/firm-info/7001398960?businessSeqNumber=1",
+      "time": "2020-04-01T20:10:29.183Z",
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    },
+    {
+      "name": "listBusinessLabors",
+      "id": "4dcbe98e-f746-4cf7-bac7-f8ee1a8c1eaf",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/firm/7000000062/business-labor?businessSequenceNumber=0&listAll=1&pageNumber=1&pageSize=50",
+      "time": "2020-04-01T20:10:29.183Z",
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    },
+    {
+      "name": "getMoneyBalance",
+      "id": "605cab14-1355-4292-be5f-cf39c1599c8f",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/money-balance/2141028569",
+      "time": "2020-04-01T20:10:29.183Z",
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    },
+    {
+      "name": "getPersonBasicInfo",
+      "id": "c396d534-5099-4512-b660-c59f45f2a832",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/person-basic-info/2139110924",
+      "time": "2020-04-01T20:10:29.183Z",
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    },
+    {
+      "name": "getPersonDeathCertificate",
+      "id": "e61ca51c-bc6d-4bac-9825-08b3f5e8427d",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/person-death-certificate/1002730826",
+      "time": "2020-04-01T20:10:29.183Z",
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    },
+    {
+      "name": "getPersonFamilyTree",
+      "id": "ab540349-2fe0-4ce5-ada8-e578f581ac47",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/person-family-tree/1002730826",
+      "time": "2020-04-01T20:10:29.183Z",
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    },
+    {
+      "name": "getPersonIdInfo",
+      "id": "00e61591-a08c-43d5-a3bd-bfc4fec02a96",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/person-id-info/2139276576",
+      "time": "2020-04-01T20:10:29.183Z",
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    },
+    {
+      "name": "listPersonPassports",
+      "id": "b5a94296-2aa7-46c3-8d1c-e377effb769d",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/person/passport?nationality=&passportNumber=&personId=1000011021&personType=",
+      "time": "2020-04-01T20:10:29.183Z",
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    },
+    {
+      "name": "listTrafficViolations",
+      "id": "6696fbc2-5bc2-4654-912f-512049d1da68",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/person/traffic-violation?foreignVehicleCrossingSeq=&foreignVehicleNumber=&pageNumber=1&pageSize=50&personId=1000011021&vehicleSerialNumber=&violationStatus=1",
+      "time": "2020-04-01T20:10:29.183Z",
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    },
+    {
+      "name": "listSponsorVisitors",
+      "id": "1dc872e8-0b04-49fd-8b8f-2b6b9aa3a336",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/person/7001398960/visitor?pageNumber=1&pageSize=50&visaType=6",
+      "time": "2020-04-01T20:10:29.183Z",
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    },
+    {
+      "name": "listPersonDependents",
+      "id": "0cfcc59f-bed4-43f5-911f-4136a0bb43c7",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/person/2139110924/dependent",
+      "time": "2020-04-01T20:10:29.183Z",
+      "responseCode": {
+        "code": 400,
+        "name": "Bad Request",
+        "detail": {
+          "name": "Bad Request",
+          "detail": "The request cannot be fulfilled due to bad syntax."
+        }
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "name": "listDomesticLabors",
+      "id": "22b1bc42-f88b-4f48-a63c-fd9f37ba5d10",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/person/2141021556/domestic-labor?listAll=1&pageNumber=50&pageSize=1",
+      "time": "2020-04-01T20:10:29.183Z",
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    },
+    {
+      "name": "listPersonDrivingLicenses",
+      "id": "6e02bc52-69b1-44d2-b4af-d316a967b1c2",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/person/2009667516/driving-license",
+      "time": "2020-04-01T20:10:29.183Z",
+      "responseCode": {
+        "code": 500,
+        "name": "Internal Server Error",
+        "detail": {
+          "name": "Internal Server Error",
+          "detail": "A generic error message, given when no more specific message is suitable."
+        }
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "name": "listPersonHealthInsurance",
+      "id": "1cbe28ba-f272-4477-b50e-1df970878db8",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/person/2000002168/health-insurance",
+      "time": "2020-04-01T20:10:29.183Z",
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    },
+    {
+      "name": "listPersonSocialEvents",
+      "id": "56dd6e99-5c89-4166-9e7f-8698e96da493",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/person/1002730826/social-event",
+      "time": "2020-04-01T20:10:29.183Z",
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    },
+    {
+      "name": "listPersonTravelRecords",
+      "id": "402437bf-f4aa-4101-8d93-02264ecc2cfe",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/person/1000011021/travel-record",
+      "time": "2020-04-01T20:10:29.183Z",
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    },
+    {
+      "name": "listPersonWantedRecords",
+      "id": "b6ac4288-037d-4cdb-989e-22239a6754ba",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/person/1002730826/wanted-record",
+      "time": "2020-04-01T20:10:29.183Z",
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    },
+    {
+      "name": "getTravelStatus",
+      "id": "7123a454-2146-4069-bec7-5fb50d11b6c4",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/travel-status/2140580008",
+      "time": "2020-04-01T20:10:29.183Z",
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    },
+    {
+      "name": "listVehicles",
+      "id": "b08755e9-1546-4708-89a0-91e42fac05a1",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/vehicle?includePreviouslyOwned=1&pageNumber=1&pageSize=50&personId=3223384375&vehicleSerialNumber=",
+      "time": "2020-04-01T20:10:29.183Z",
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    },
+    {
+      "name": "getVehicleInfo",
+      "id": "44adb639-90ae-47de-ad2d-875bbb223cd1",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/vehicle-info?oldPlateNumber=1010002&plate=ببب-2222-1&vehicleSequenceNumber=10400&vin=VD9909",
+      "time": "2020-04-01T20:10:29.183Z",
+      "responseCode": {
+        "code": 400,
+        "name": "Bad Request",
+        "detail": {
+          "name": "Bad Request",
+          "detail": "The request cannot be fulfilled due to bad syntax."
+        }
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "name": "listVehicleWantedRecords",
+      "id": "65dbcf36-def7-41e3-b05a-3df86a8ef514",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/vehicle/wanted-record?plate=ببب-2222-1&vehicleSequenceNumber=10400",
+      "time": "2020-04-01T20:10:29.183Z",
+      "responseCode": {
+        "code": 400,
+        "name": "Bad Request",
+        "detail": {
+          "name": "Bad Request",
+          "detail": "The request cannot be fulfilled due to bad syntax."
+        }
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "name": "listAccidents",
+      "id": "1ace16f2-2685-4787-b42d-8da241ec0316",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/vehicle/10400/accident?pageNumber=1&pageSize=50",
+      "time": "2020-04-01T20:10:29.183Z",
+      "responseCode": {
+        "code": 404,
+        "name": "Not Found",
+        "detail": {
+          "name": "Not Found",
+          "detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+        }
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "name": "listVehicleCoownersAndDelegates",
+      "id": "65eb7848-636c-4490-a01a-2c3f8ff7dcb8",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/vehicle/80400/co-owners-delegates?coOwningType=1&listAll=1",
+      "time": "2020-04-01T20:10:29.183Z",
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    },
+    {
+      "name": "listVehiclePolicyInfo",
+      "id": "814034c0-5432-425f-b8f3-01691ddecc86",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/vehicle/604034644/policy-info",
+      "time": "2020-04-01T20:10:29.183Z",
+      "responseCode": {
+        "code": 404,
+        "name": "Not Found",
+        "detail": {
+          "name": "Not Found",
+          "detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+        }
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 0,
+          "fail": 1
+        }
+      }
+    },
+    {
+      "name": "getTrafficViolationInfo",
+      "id": "1e0fdcbe-e0aa-41d3-9100-532df33b6651",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/violation-info/6999976950",
+      "time": "2020-04-01T20:10:29.183Z",
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    },
+    {
+      "name": "getVisitorVisaInfo",
+      "id": "a8a5a6b6-001e-44d3-943d-0d5cf4b84b6b",
+      "url": "http://localhost:8080/api/v1/mw/inquiry/visitor-visa-info/3222336574",
+      "time": "2020-04-01T20:10:29.183Z",
+      "responseCode": {
+        "code": 200,
+        "name": "OK",
+        "detail": {
+          "name": "OK",
+          "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+        }
+      },
+      "testPassFailCounts": {
+        "Status test": {
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    }
+  ],
+  "synced": false
+}
